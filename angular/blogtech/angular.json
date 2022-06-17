@@ -3,9 +3,13 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "brasilDEV": {
+    "blogtech": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -13,17 +17,18 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/brasil-dev",
+            "outputPath": "dist/blogtech",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -64,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "brasilDEV:build:production"
+              "browserTarget": "blogtech:build:production"
             },
             "development": {
-              "browserTarget": "brasilDEV:build:development"
+              "browserTarget": "blogtech:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "brasilDEV:build"
+            "browserTarget": "blogtech:build"
           }
         },
         "test": {
@@ -85,12 +90,13 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
+            "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           }
@@ -99,6 +105,6 @@
     }
   },
   "cli": {
-    "analytics": false
+    "analytics": "7cd9180a-dab6-4f6c-b4a1-d5686316a1e4"
   }
 }
