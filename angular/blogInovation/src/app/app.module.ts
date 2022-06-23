@@ -5,7 +5,6 @@ import { HttpClientModule } from '@angular/common/http'
 
 // Route Module
 import { RoutingModule } from './app.router';
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { PostPageComponent } from './pages/post-page/post-page.component';
@@ -25,9 +24,8 @@ import { BlogService } from './providers/blog.service';
   imports: [
     RoutingModule,
     BrowserModule,
-    FormsModule,
-    AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [BlogService],
   bootstrap: [AppComponent]
