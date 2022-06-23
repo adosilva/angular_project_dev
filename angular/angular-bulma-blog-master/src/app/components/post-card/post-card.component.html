@@ -1,0 +1,25 @@
+<div class="card">
+  <div class="card-image">
+    <figure class="image is-4by3">
+      <a [routerLink]="post.router">
+        <img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image" />
+      </a>
+    </figure>
+  </div>
+
+  <div class="card-content">
+    <div class="media">
+      <div class="media-content">
+        <h2 class="title is-4"><a [routerLink]="post.router">{{ post.title }}</a></h2>
+      </div>
+    </div>
+
+    <div class="content">
+      <div [innerHTML]="post.body">
+        <!-- aqui vira o conteudo de post.body -->
+      </div>
+      <br>
+      <small>11:09 PM - 1 Jan 2016</small>
+    </div>
+  </div>
+</div>
