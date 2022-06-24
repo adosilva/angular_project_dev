@@ -43,7 +43,7 @@ posts() {
         let posts = JSON.parse(data._body);
 
         // Loop nos posts para criar uma propriedade extra
-        posts.map((post, i) => {
+        posts.map((post:any, i:any) => {
           // Título no formato de slug
           posts[i].titleSlug = _.kebabCase(post.title);
 
@@ -63,7 +63,7 @@ posts() {
   post(id: any) {
     return new Promise((resolve, reject) => {
       // Pegamos a lista de posts
-      this.posts().then((posts: any[]) => {
+      this.posts().then((posts: any[any]) => {
         // Filtramos procurando pelo post específico
         let post = _.find(posts, (p) => {
           return p.id == id;
