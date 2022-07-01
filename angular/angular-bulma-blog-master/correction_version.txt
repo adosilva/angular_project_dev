@@ -1,0 +1,5 @@
+npm uninstall @nguniversal/common
+npm uninstall @nguniversal/builders
+npm uninstall @nguniversal/express-engine
+
+> ng add @nguniversal/express-engine

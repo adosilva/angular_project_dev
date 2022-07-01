@@ -1,0 +1,17 @@
+Watchpack Error (watcher): Error: UNKNOWN: unknown error, watch
+
+1. npm uninstall -g @angular/cli
+2. rm -rf node_modules > DENTRO DA BLOG
+3. npm cache clean --force > Fora da Blog com [ cd .. ]
+
+4. npm install -g @angular/cli@latest > Fora da Blog
+5. npm install --save --global @angular-devkit/build-angular > DENTRO DA BLOG
+6. npm install > Dentro da BLOG > Usando CMD
+
+> ng build ou ng serve
+
+> npm install --save bulma
+
+> npm install --save lodash
+
+> npm update
