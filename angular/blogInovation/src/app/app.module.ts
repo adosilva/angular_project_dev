@@ -15,6 +15,7 @@ import { BlogService } from './providers/blog.service';
 import { HeaderComponent } from './components/header/header.component';
 import { PostCardComponent } from './components/post-card/post-card.component';
 import { PostsComponent } from './components/posts/posts.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { PostsComponent } from './components/posts/posts.component';
     HeaderComponent,
     PostCardComponent,
     PostsComponent,
+    FooterComponent,
 
   ],
   imports: [
