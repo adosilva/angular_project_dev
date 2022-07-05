@@ -17,6 +17,7 @@ import { PostCardComponent } from './components/post-card/post-card.component';
 import { PostsComponent } from './components/posts/posts.component';
 import { FooterComponent } from './components/footer/footer.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +28,7 @@ import { FooterComponent } from './components/footer/footer.component';
     PostCardComponent,
     PostsComponent,
     FooterComponent,
+
 
   ],
   imports: [
